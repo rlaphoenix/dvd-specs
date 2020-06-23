@@ -10,7 +10,7 @@ If any information shown in this is believed to be wrong or missing, feel free t
 
 # Table of Contents
 
-## [1. DVD Elements and Hierarchy](DVD%20Elements%20and%20Hierarchy/index.md)
+## [1. DVD Elements and Hierarchy](DVD%20Elements%20and%20Hierarchy/)
 
 ### 1.1. Cells
 
