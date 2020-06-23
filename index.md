@@ -8,6 +8,13 @@ All contributions made will have assumed to not have broken any signed agreement
 
 If any information shown in this is believed to be wrong or missing, feel free to make a pull request. (some form of reasoning and evidence would be nice)
 
+## Sources:
+
+- [dvd-replica.com's "Unofficial DVD Specifications Guide 2.2.5"](http://dvd-replica.com/DVD/) (now defunct?)
+- [mpucoder archive](http://www.mpucoder.com/archive.shtml)
+- [stnsoft archive](http://stnsoft.com/DVD/index.html)
+- [dvd.sourceforge.net/dvdinfo](http://dvd.sourceforge.net/dvdinfo)
+
 # Table of Contents
 
 ## [1. DVD Elements and Hierarchy](DVD%20Elements%20and%20Hierarchy/)
