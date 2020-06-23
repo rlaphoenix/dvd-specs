@@ -31,4 +31,4 @@ If any information shown in this is believed to be wrong or missing, feel free t
 
 ### [1.5. PGC in titles](DVD%20Elements%20and%20Hierarchy/#5-pgc-in-titles-1)
 
-### 1.6. PGCs in a language unit
+### [1.6. PGC's in a language unit](DVD%20Elements%20and%20Hierarchy/#6-pgcs-in-a-language-unit-1)
