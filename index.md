@@ -1,6 +1,6 @@
 # Disclaimer and Warning
 
-All information provided is in no way official. All of it has been researched by the community but some inaccuracies may exist.
+All information provided is in no way official. All of it has been researched by the community and some inaccuracies may exist.
 
 You may not contribute to this repo if you have read the official specifications as you are under a [non-disclosure agreement](https://wikipedia.org/wiki/Non-disclosure_agreement) which explicitly disallows you from doing so.
 
