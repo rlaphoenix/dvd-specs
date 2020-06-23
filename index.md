@@ -10,30 +10,16 @@ If any information shown in this is believed to be wrong or missing, feel free t
 
 # Table of Contents
 
-## [1. DVD Elements and Hierarchy](/DVD%20Elements%20and%20Hierarchy/index.md)
+## [1. DVD Elements and Hierarchy](DVD%20Elements%20and%20Hierarchy/index.md)
 
 ### 1.1. Cells
 
-### 1.2. Graphical display of cells
+### 1.2. Programs
 
-### 1.3. Programs
+### 1.3. Chapters
 
-### 1.4. Graphical display of programs
+### 1.4. Program Chain (PGC)
 
-### 1.5. Chapters
+### 1.5. PGC in titles
 
-### 1.6. Graphical display of chapters
-
-### 1.7. Program Chain (PGC)
-
-### 1.8. Graphical display of Program Chains
-
-### 1.9. Graphical display of chapters in different PGCs
-
-### 1.10. PGC in titles
-
-### 1.11. Graphical display of titles and PGCs
-
-### 1.12. PGCs in a language unit
-
-### 1.13. Graphical display of language units
+### 1.6. PGCs in a language unit
