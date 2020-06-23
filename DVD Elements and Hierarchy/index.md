@@ -176,6 +176,28 @@ A PGC can have up to 128 pre-commands and post-commands. A PGC does not require 
 
 The above illustration shows four chapters in two separate PGCs. Even though the chapter number is increased sequentially, the program number starts from 1 again for each PGC. Different PGCs may point to the same cells physically located on a DVD disc. In this scenario, both PGCs point to the same cells 6 and 7. Most authoring programs assign different labels to differentiate the same cells in different PGCs. Since the cells are uniquely identified by their vob id and cell id, PGCs have only pointers to these cells so actually no video, audio or other stream data are duplicated. Commercial DVDs usually have a large number of PGCs which point to the same set of cells so the DVD contents may appear larger than 9 Gbytes to confuse backup or copying tools.
 
-## 5. PGC in Titles
+# 5. PGC in Titles
 
 A video title is often a unique sequence of video and audio contents. A typical DVD disc contains one or more titles. The longest title often is the main movie on a commercial DVD. A title may have more than one PGCs. PGCs that belong to the same title has the same title number in their header. From a hierarchy perspective, a title is a level higher than the PGCs.
+
+In the following project, there are requirements to show the audience three choices of viewing different versions of a documentary video. The documentary video has five different topics. Each topic is organized as a cell. Each cell that represents the video and audio clip of the corresponding topic is uniquely identified by its vob id (a number from 1 to 65535). In the below illustration, the cells are labeled from vob.id1 to vob.id5.
+
+![Title Project](title-project.png)
+
+A title containing three PGCs can be designed to allow three different choices of viewing. The first PGC (labeled “PGC 1”) presents the first choice of viewing. If this is the default choice, when the title is selected, PGC 1 will play back the cells labeled vob.id1, vob.id2, vob.id3, and vob.id4, in that order. PGC 1 is marked as the entry-PGC in the title so when the title is selected, the DVD player knows which PGC to select to begin playback. A title can have as many PGCs as needed, but there can be only one entry-PGC per each title.
+
+PGC 1 has 4 programs (labeled t1.pgc1.pgn1 through t1.pgc1.pgn4). Each program contains only one cell. Program 1, 3, and 4 are marked as chapters 1, 2, and 3. Even though PGC 1 has 3 chapters, all programs within the PGC (hence all cells, labeled vob.id1 through vob.id4, in that order) are played back sequentially. Selecting chapter 2 while PGC 1 is playing back the first cell (labeled vob.id1) will start the playback of the third cell (labeled vob.id3) since the playback jumps from chapter 1 to 2. Most DVD player allows the selection of programs (commonly referred to as tracks) in a title by pressing the (Skip/Next) or (Skip/Previous) key on the remote control. If PGC 1 is playing the first cell, pressing (Skip/Next) starts the next program and the LCD display of the player still shows chapter 1. Pressing (Skip/Next) again to start program 3 and the LCD display shows chapter 2.
+
+The second PGC (labeled PGC 2) presents the second choice of viewing. PGC 2 has 1 program (labeled t1.pgc2.pgn1) which has one cell (labeled vob.id5).
+
+The third PGC (labeled PGC 3) presents the last choice of viewing. PGC 3 has 2 programs (labeled t1.pgc3.pgn1 and t1.pgc3.pgn2). The first program (labeled t1.pgc3.pgn1) has two cells which offers a different version of the cells in chapter 1 and is marked as chapter 4. The second program (labeled t1.pgc3.pgn2) has one cell and is marked as chapter 5. Pressing the (Skip/Next) on the remote control while PGC 1 is playing the last program (chapter 3) starts chapter 4 of the title (PGC 3, program 1 of this PGC). PGC 2 is present in the title but will not be played back. In other words, PGC 2 is invisible from the DVD player. The DVD author can add post commands to PGC 1 or PGC 3 to access PGC 2, or let the viewer access PGC 2 through a menu.
+
+Most DVD players can locate a title, and individual chapters or programs in the title. Many remote control unit has the GoTo key to support the selection of available titles on the video disc. For instance, pressing GoTo and the number 1 on the keypad selects title 1. Most remote control unit has the Repeat key to repeat the playback of a title, a chapter, or a program.
+
+In summary, chapters in a title are located by two unique items: the PGC in the title and the program in the specified PGC. Chapters are not restricted to be a part of one PGC. Since a title may contain more than one PGCs, chapter is seen as a part of a title (hence the term Part-Of-Title or PTT). The DVD specifications require the authoring software to create a structure holding the chapter or PTT information. Detailed information of this structure (VTS_PTT_SRPT, Part-Of-Title Search Pointer Information) is covered in later section of this document.
+
+## Graphical display of titles and PGCs
+
+![Title Graphic](title-graphic.png)
+
+The illustration above displays two yellow icons representing the titles labeled “Title 1” and “Title 2”. Theoretically, a title can have up to 64k PGCs, but the DVD specifications limit a title to a maximum of 999 PGCs. For most practical purposes, there are very few commercial movie DVDs having more than 250 PGCs per title. PGCs are numbered from 1 within each title. Each title must have at least one PGC and can have only one entry-PGC. A title is a global component in the sense that it can be linked to from any location on the DVD disc either directly or indirectly. There are virtual commands designed to operate on titles so any title can be located and linked to quickly. The DVD specifications permit up to 99 titles per disc.
