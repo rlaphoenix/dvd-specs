@@ -22,6 +22,8 @@
 
 ## [6. PGC's in a language unit](#6-pgcs-in-a-language-unit-1)
 
+### - Graphical display of Language Units
+
 ---
 
 # 1. Cells
@@ -211,3 +213,11 @@ A program chain (PGC) contains commands to direct playback. The DVD specificatio
 A PGC in a language unit usually contains commands to perform interactions with menus to highlight and to select certain items on the menu. The DVD specifications allow a PGC to be one of the following predefined menus when it is a part of a language unit: title menu, root menu, subpicture menu, angle menu, audio menu, and chapter menu. Without these menu attributes, a PGC in a language unit has all other functions and properties of a standard PGC. There is practically no limit on the number of PGCs which can be present in a language unit, so additional menu PGCs can be created if the authoring project requires more than what the predefined menus offer. A video DVD can have as many language units as needed to provide the display of menus, the selection of subpicture and audio streams in the desired languages. Language units can be present only in the Video Manager (VMG) and the Video Title Set Menu (VTSM) domain.
 
 Explanations of the VMG and VTSM domain are covered in subsequent sections of this guide. The section PGC Category has more information on the usage of predefined menus in language units with a standard remote control. Please also read Language Codes for a complete list of the languages supported by the DVD specifications.
+
+## Graphical display of language units
+
+From a hierarchy perspective, a language unit is a level higher than the PGCs. Language units are present in certain domains (domains are explained in the next section of this document), and cannot be present where a title exists. The following diagram shows the relationship between language units and PGCs.
+
+![Language Unit Graphic](langunit-graphic.png)
+
+In the above illustration, the first language unit is English with 3 PGCs: a root menu PGC (this PGC is played back when the Menu button on the remote control is pressed), an angle menu PGC (this PGC is played back when the Angle button on the remote control is pressed), and a menu PGC which is invoked by the post commands of the root menu of the language unit. The second language unit is Spanish with 2 PGCs: a title menu (this PGC is played back when the Title button on the remote control is pressed and the DVD player default language is Spanish), and a menu PGC. The third language unit is French with 6 PGCs: 5 predefined menu PGCs (predefined menus are discussed in more details later in this document) and one menu PGC.
