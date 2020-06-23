@@ -18,6 +18,8 @@
 
 ### - Graphical display of PGC
 
+## [5. PGC in Titles](#5-pgc-in-titles-1)
+
 ---
 
 # 1. Cells
@@ -174,6 +176,6 @@ A PGC can have up to 128 pre-commands and post-commands. A PGC does not require 
 
 The above illustration shows four chapters in two separate PGCs. Even though the chapter number is increased sequentially, the program number starts from 1 again for each PGC. Different PGCs may point to the same cells physically located on a DVD disc. In this scenario, both PGCs point to the same cells 6 and 7. Most authoring programs assign different labels to differentiate the same cells in different PGCs. Since the cells are uniquely identified by their vob id and cell id, PGCs have only pointers to these cells so actually no video, audio or other stream data are duplicated. Commercial DVDs usually have a large number of PGCs which point to the same set of cells so the DVD contents may appear larger than 9 Gbytes to confuse backup or copying tools.
 
-## PGC in Titles
+## 5. PGC in Titles
 
 A video title is often a unique sequence of video and audio contents. A typical DVD disc contains one or more titles. The longest title often is the main movie on a commercial DVD. A title may have more than one PGCs. PGCs that belong to the same title has the same title number in their header. From a hierarchy perspective, a title is a level higher than the PGCs.
