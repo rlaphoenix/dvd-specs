@@ -20,6 +20,6 @@ If any information shown in this is believed to be wrong or missing, feel free t
 
 ### [1.4. Program Chain (PGC)](DVD%20Elements%20and%20Hierarchy/#4-program-chain-pgc-1)
 
-### 1.5. PGC in titles
+### [1.5. PGC in titles](DVD%20Elements%20and%20Hierarchy/#5-pgc-in-titles-1)
 
 ### 1.6. PGCs in a language unit
