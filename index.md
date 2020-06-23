@@ -12,13 +12,13 @@ If any information shown in this is believed to be wrong or missing, feel free t
 
 ## [1. DVD Elements and Hierarchy](DVD%20Elements%20and%20Hierarchy/)
 
-### 1.1. Cells
+### [1.1. Cells](DVD%20Elements%20and%20Hierarchy/#1-cells-1)
 
-### 1.2. Programs
+### [1.2. Programs](DVD%20Elements%20and%20Hierarchy/#2-programs-1)
 
-### 1.3. Chapters
+### [1.3. Chapters](DVD%20Elements%20and%20Hierarchy/#3-chapters-1)
 
-### 1.4. Program Chain (PGC)
+### [1.4. Program Chain (PGC)](DVD%20Elements%20and%20Hierarchy/#4-program-chain-pgc-1)
 
 ### 1.5. PGC in titles
 
