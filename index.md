@@ -15,6 +15,8 @@ If any information shown in this is believed to be wrong or missing, feel free t
 - [stnsoft archive](http://stnsoft.com/DVD/index.html)
 - [dvd.sourceforge.net/dvdinfo](http://dvd.sourceforge.net/dvdinfo)
 
+---
+
 # Table of Contents
 
 ## [1. DVD Elements and Hierarchy](DVD%20Elements%20and%20Hierarchy/)
