@@ -6,6 +6,8 @@ You may not contribute to this repo if you have read the official specifications
 
 All contributions made will have assumed to not have broken any signed agreements.
 
+If any information shown in this is believed to be wrong or missing, feel free to make a pull request. (some form of reasoning and evidence would be nice)
+
 # Table of Contents
 
 ## 1. DVD Elements and Hierarchy
