@@ -13,7 +13,8 @@ If any information shown in this is believed to be wrong or missing, feel free t
 - [dvd-replica.com's "Unofficial DVD Specifications Guide 2.2.5"](http://dvd-replica.com/DVD/) (now defunct?)
 - [mpucoder archive](http://www.mpucoder.com/archive.shtml)
 - [stnsoft archive](http://stnsoft.com/DVD/index.html)
-- [dvd.sourceforge.net/dvdinfo](http://dvd.sourceforge.net/dvdinfo)
+- <http://dvd.sourceforge.net/dvdinfo>
+- [DVD Demystified](https://dvddemystified.com)
 
 ---
 
